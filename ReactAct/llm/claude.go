@@ -9,7 +9,7 @@ import (
 	"github.com/anthropics/anthropic-sdk-go/option"
 )
 
-const Model = anthropic.ModelClaudeSonnet4_6
+const Model = anthropic.ModelClaudeHaiku4_5_20251001
 
 // Client wraps the Anthropic SDK client.
 type Client struct {
