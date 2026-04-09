@@ -1,0 +1,395 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    PRE-SIGNING VERIFICATION CHECKLIST                        ║
+║              Best Furniture Rental in Bengaluru - Step 5 Complete             ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Company Selected: ____________________________    Date: ____________________
+
+Contact Person: ____________________________     Phone: ___________________
+
+================================================================================
+SECTION 1: COMPANY CREDENTIALS VERIFICATION
+================================================================================
+
+LEGAL REGISTRATION
+[ ] GST Number Obtained: ___________________________
+[ ] GST Portal Verified (gst.gov.in): ✓ / ✗
+[ ] Company Registration Number (CIN): ___________________________
+[ ] MCA Portal Verification Completed: ✓ / ✗
+[ ] Business License Number: ___________________________
+[ ] Registered Address Verified: ___________________________
+[ ] Address Matches on Multiple Platforms: ✓ / ✗
+[ ] Business License Renewal Status: Current / Expired
+[ ] Years in Furniture Rental Business: _____________________
+
+CONTACT & COMMUNICATION
+[ ] Primary Phone Number Verified: ___________________________
+[ ] Phone Number Responsive: ✓ / ✗
+[ ] Official Email Verified: ___________________________
+[ ] Email Support Tested: ✓ / ✗
+[ ] Response Time to Email: __________ hours
+[ ] Customer Support Hours: From _____ To _____
+[ ] 24/7 Support Available: ✓ / ✗
+[ ] Escalation Contact Provided: ✓ / ✗
+
+PHYSICAL PRESENCE
+[ ] Registered Office Address: ___________________________
+[ ] Office Address Confirmed: ✓ / ✗
+[ ] Showroom/Demo Location: ___________________________
+[ ] Showroom Visit Completed: ✓ / ✗
+[ ] Staff Knowledge Level: Excellent / Good / Average / Poor
+
+FINANCIAL CREDIBILITY
+[ ] Website Security Certificate (SSL): Verified ✓ / ✗
+[ ] Payment Gateway Secure: ✓ / ✗
+[ ] Refund Bank Account Verified: ___________________________
+[ ] Multiple Payment Options Available: ✓ / ✗
+[ ] Payment Methods Accepted: ___________________________
+
+================================================================================
+SECTION 2: RENTAL TERMS VERIFICATION
+================================================================================
+
+BASIC RENTAL TERMS
+[ ] Minimum Rental Period: __________ months
+[ ] Maximum Rental Period: __________ months
+[ ] Available Rental Durations: ___________________________
+[ ] Rental Period Flexibility: Excellent / Good / Limited
+[ ] Can Extend Rental: ✓ / ✗
+[ ] Extension Process Documented: ✓ / ✗
+[ ] Extension Charges: ___________________________
+
+PRICING TRANSPARENCY
+[ ] Monthly Rental Price: ₹ __________
+[ ] Setup/Installation Fee: ₹ __________ (Refundable / Non-refundable)
+[ ] Delivery Charges: ₹ __________ (Refundable / Non-refundable)
+[ ] Pickup Charges: ₹ __________ (Free / Paid)
+[ ] Security Deposit Required: ₹ __________
+[ ] Any Other Charges Listed: ___________________________
+[ ] All Charges in Writing: ✓ / ✗
+[ ] No Additional Hidden Charges: ✓ / ✗
+
+RENTAL INCLUSIONS
+[ ] Delivery Included: ✓ / ✗
+[ ] Installation Included: ✓ / ✗
+[ ] Assembly Included: ✓ / ✗
+[ ] Initial Cleaning Included: ✓ / ✗
+[ ] Dismantling Included: ✓ / ✗
+[ ] Packaging for Removal Included: ✓ / ✗
+
+================================================================================
+SECTION 3: CANCELLATION POLICY VERIFICATION
+================================================================================
+
+CANCELLATION TERMS
+[ ] Notice Period Required: __________ days
+[ ] Cancellation Method Options:
+    [ ] Online
+    [ ] Phone
+    [ ] Email
+    [ ] In-Person
+[ ] Cancellation Fees/Penalties: ___________________________
+[ ] Early Termination Charges: ₹ __________
+[ ] Refund Policy Documented: ✓ / ✗
+[ ] Refund Timeline: __________ days
+[ ] Partial Refund Possible: ✓ / ✗
+[ ] Full Refund Conditions: ___________________________
+
+RETURN & PICKUP
+[ ] Pickup Scheduled by Company: ✓ / ✗
+[ ] Customer Arranges Return: ✓ / ✗
+[ ] Pickup Charges Applied: ✓ / ✗
+[ ] Pickup Timeline Options: ___________________________
+[ ] Inspection Process Documented: ✓ / ✗
+[ ] Inspection Timeline: __________ days from pickup
+[ ] Deduction Notification Process: ___________________________
+
+SECURITY DEPOSIT HANDLING
+[ ] Deposit Amount: ₹ __________
+[ ] Deposit Refund Timeline: __________ days
+[ ] Deposit Deduction Process: ___________________________
+[ ] Conditions for Deposit Deduction: ___________________________
+[ ] Interest on Deposit (if applicable): _______% per annum
+[ ] Bank Account for Refund Provided: ✓ / ✗
+
+================================================================================
+SECTION 4: DAMAGE & INSURANCE VERIFICATION
+================================================================================
+
+DAMAGE ASSESSMENT
+[ ] Damage Assessment Method: ___________________________
+[ ] Professional Inspector Used: ✓ / ✗
+[ ] Damage Categories Defined:
+    [ ] Wear & Tear (Allowed)
+    [ ] Minor Damage (Charged)
+    [ ] Major Damage (Charged)
+    [ ] Structural Damage (Charged)
+[ ] Damage Charge Examples Provided: ✓ / ✗
+[ ] Damage Charges Itemized: ✓ / ✗
+[ ] Deductible per Item: ₹ __________
+[ ] Maximum Deductible per Rental: ₹ __________
+[ ] Photos Required for Documentation: ✓ / ✗
+
+INSURANCE COVERAGE
+[ ] Basic Insurance Included: ✓ / ✗
+[ ] Optional Extended Protection: ✓ / ✗
+[ ] Premium Protection Cost: ₹ __________ (per month/entire period)
+[ ] Accidental Damage Covered: ✓ / ✗
+[ ] Intentional Damage Coverage: ✗ (typically excluded)
+[ ] Theft Coverage: ✓ / ✗
+[ ] Water/Moisture Damage Coverage: ✓ / ✗
+[ ] Fire Damage Coverage: ✓ / ✗
+[ ] Natural Calamity Coverage: ✓ / ✗
+[ ] Insurance Coverage Limits: ___________________________
+[ ] Exclusions Listed: ___________________________
+
+DAMAGE CLAIM PROCESS
+[ ] Claim Filing Method: ___________________________
+[ ] Required Documentation: ___________________________
+[ ] Claim Processing Timeline: __________ days
+[ ] Claim Approval Process: ___________________________
+[ ] Appeal Process Available: ✓ / ✗
+
+================================================================================
+SECTION 5: MAINTENANCE & REPAIR VERIFICATION
+================================================================================
+
+MAINTENANCE INCLUSION
+[ ] Maintenance Cost: Free / ₹ __________ per month
+[ ] Types of Maintenance Covered: ___________________________
+[ ] Routine Cleaning: Included / Not Included / Extra Charge
+[ ] Repair of Manufacturing Defects: Included / Charged
+[ ] Replacement Parts: Original / Generic
+[ ] Normal Wear & Tear Repair: Included / Charged
+
+REPAIR PROCESS
+[ ] Repair Request Method:
+    [ ] Phone
+    [ ] App/Online
+    [ ] Email
+    [ ] In-Person
+[ ] Response Time for Repair Request: __________ days
+[ ] Repair Timeline: __________ days
+[ ] Repair Execution: Company / Customer Choice
+[ ] Temporary Replacement Available: ✓ / ✗
+[ ] Customer Can Arrange Own Repairs: ✓ / ✗
+[ ] Own Repair Reimbursement: ✓ / ✗
+
+WARRANTY & GUARANTEE
+[ ] Manufacturing Defect Warranty: __________ months
+[ ] Repair Quality Warranty: ✓ / ✗
+[ ] Replacement Guarantee for Defects: ✓ / ✗
+[ ] Warranty Documentation: ✓ / ✗
+[ ] Extended Warranty Available: ✓ / ✗
+[ ] Extended Warranty Cost: ₹ __________
+
+SUPPORT SERVICES
+[ ] 24/7 Support Available: ✓ / ✗
+[ ] Support Options:
+    [ ] Phone
+    [ ] Chat
+    [ ] Email
+    [ ] In-App
+    [ ] Mobile App
+[ ] Support Response Time: __________ hours
+[ ] Average Resolution Time: __________ days
+
+================================================================================
+SECTION 6: CUSTOMER REVIEWS & REPUTATION CHECK
+================================================================================
+
+ONLINE REVIEWS
+[ ] Google Maps Rating: ___/5 (Stars)
+[ ] Justdial Rating: ___/5 (Stars)
+[ ] Yelp Rating (if applicable): ___/5 (Stars)
+[ ] Total Reviews Checked: __________
+
+REVIEW ANALYSIS
+[ ] Positive Reviews (%): __________
+[ ] Negative Reviews (%): __________
+[ ] Common Complaint Themes:
+    [ ] Refund Issues
+    [ ] Damage Charges
+    [ ] Poor Customer Service
+    [ ] Hidden Charges
+    [ ] Delivery Problems
+    [ ] Quality Issues
+[ ] Recurring Praise Points:
+    [ ] Good Service
+    [ ] Fair Pricing
+    [ ] Quality Furniture
+    [ ] Responsive Support
+    [ ] Easy Process
+
+COMPLAINT RESOLUTION
+[ ] Company Responds to Reviews: ✓ / ✗
+[ ] Response Quality: Excellent / Good / Average / Poor
+[ ] Issues Resolved Satisfactorily: ✓ / ✗
+[ ] Unresolved Complaints Found: ✓ / ✗
+
+================================================================================
+SECTION 7: AGREEMENT & DOCUMENTATION
+================================================================================
+
+DOCUMENT COLLECTION
+[ ] Rental Agreement Sample Obtained: ✓ / ✗
+[ ] Terms & Conditions Provided: ✓ / ✗
+[ ] Cancellation Policy in Writing: ✓ / ✗
+[ ] Damage Policy Documentation: ✓ / ✗
+[ ] Insurance Terms Documented: ✓ / ✗
+[ ] Maintenance Policy in Writing: ✓ / ✗
+[ ] Price Quote in Writing: ✓ / ✗
+
+AGREEMENT REVIEW
+[ ] Agreement Read Completely: ✓ / ✗
+[ ] All Terms Understood: ✓ / ✗
+[ ] Favorable to Customer: ✓ / ✗
+[ ] Penalty Clauses Reasonable: ✓ / ✗
+[ ] Dispute Resolution Process Clear: ✓ / ✗
+[ ] Terms Can Be Negotiated: ✓ / ✗
+
+CLARITY OF TERMS
+[ ] Minimum Commitment Clear: ✓ / ✗
+[ ] Cancellation Process Clear: ✓ / ✗
+[ ] Damage Charges Clear: ✓ / ✗
+[ ] Refund Process Clear: ✓ / ✗
+[ ] Customer Obligations Clear: ✓ / ✗
+[ ] Company Obligations Clear: ✓ / ✗
+
+================================================================================
+SECTION 8: FINAL VERIFICATION QUESTIONS
+================================================================================
+
+CLARIFICATION OBTAINED
+[ ] Written Answers to All Questions: ✓ / ✗
+[ ] Verbal Commitments Documented in Writing: ✓ / ✗
+[ ] Ambiguous Terms Clarified: ✓ / ✗
+[ ] All Exceptions Documented: ✓ / ✗
+
+CRITICAL QUESTIONS ANSWERED:
+1. What exactly is "damage" and how is it assessed?
+   Answer: ___________________________________________________
+
+2. What is the complete refund process and timeline?
+   Answer: ___________________________________________________
+
+3. Are there ANY charges not mentioned in basic price?
+   Answer: ___________________________________________________
+
+4. What is the dispute resolution process?
+   Answer: ___________________________________________________
+
+5. Can I cancel anytime, and what is the exact cost?
+   Answer: ___________________________________________________
+
+6. What maintenance is truly included at no extra cost?
+   Answer: ___________________________________________________
+
+7. How are repairs handled and who pays for them?
+   Answer: ___________________________________________________
+
+8. What happens if furniture is damaged due to accident?
+   Answer: ___________________________________________________
+
+9. What is the escalation process for complaints?
+   Answer: ___________________________________________________
+
+10. Will I receive GST invoices for tax purposes?
+    Answer: ___________________________________________________
+
+================================================================================
+SECTION 9: COMPARISON WITH ALTERNATIVES
+================================================================================
+
+COMPARED COMPANIES
+Company 1: ________________________  Score: _____/10
+Company 2: ________________________  Score: _____/10
+Company 3: ________________________  Score: _____/10
+Selected: ________________________  Score: _____/10
+
+KEY DIFFERENTIATORS
+Best on Price: ____________________
+Best on Quality: ___________________
+Best on Flexibility: ________________
+Best on Support: ___________________
+Overall Best Value: ________________
+
+WHY SELECTED COMPANY WON:
+Reason 1: ___________________________________________________
+Reason 2: ___________________________________________________
+Reason 3: ___________________________________________________
+
+================================================================================
+SECTION 10: SIGN-OFF CHECKLIST
+================================================================================
+
+READY TO SIGN - VERIFY ALL CHECKBOXES ARE MARKED:
+
+CREDIBILITY VERIFIED
+[ ] Company registration verified
+[ ] GST registration confirmed
+[ ] Phone/email working and responsive
+[ ] Legitimate business address confirmed
+[ ] No major red flags found
+
+POLICIES UNDERSTOOD
+[ ] Cancellation policy clear and acceptable
+[ ] Damage policy clear and fair
+[ ] Insurance coverage understood
+[ ] Maintenance terms clear
+[ ] Refund process transparent
+
+FINANCES CONFIRMED
+[ ] Total monthly cost: ₹ __________
+[ ] Setup/Installation: ₹ __________
+[ ] Pickup/Delivery: ₹ __________
+[ ] Security Deposit: ₹ __________
+[ ] All costs documented and agreed
+[ ] No hidden charges identified
+
+DOCUMENTATION COMPLETE
+[ ] Rental agreement obtained
+[ ] All terms in writing
+[ ] Prices confirmed in writing
+[ ] Contact information verified
+[ ] Copies saved for records
+
+DECISION CONFIRMED
+[ ] This is my preferred company: ✓ / ✗
+[ ] Terms are acceptable: ✓ / ✗
+[ ] Price is reasonable: ✓ / ✗
+[ ] I am confident in this choice: ✓ / ✗
+
+READY TO PROCEED
+[ ] All sections completed: ✓ / ✗
+[ ] No unresolved concerns: ✓ / ✗
+[ ] All questions answered: ✓ / ✗
+[ ] Ready to sign agreement: ✓ / ✗
+
+================================================================================
+SIGN-OFF
+
+Customer Name: _____________________________  Date: __________________
+
+Customer Signature: _________________________  Contact: ________________
+
+Company Representative: ________________________ Phone: ________________
+
+Document Saved: ✓        Copies Kept: ✓        Verified: ✓
+
+================================================================================
+IMPORTANT REMINDERS
+
+✓ Keep copies of all agreements and documentation
+✓ Maintain email/SMS communications for reference
+✓ Document any damage with photos before rental
+✓ Report any issues immediately
+✓ Keep payment receipts and GST invoices
+✓ Follow maintenance guidelines as per agreement
+✓ Don't authorize damage not discussed in advance
+✓ Keep contact information for escalation
+✓ Document all communications with company
+
+================================================================================
+VERIFICATION COMPLETE - READY FOR FURNITURE RENTAL
+================================================================================

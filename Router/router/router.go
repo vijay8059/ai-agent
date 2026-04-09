@@ -17,6 +17,10 @@ import (
 	maagent "github.com/vijay8059/ai-agent/MultiAgent/agent"
 	mallm "github.com/vijay8059/ai-agent/MultiAgent/llm"
 
+	// Standalone ReactAct module
+	raagent "github.com/vijay8059/ai-agent/ReactAct/agent"
+	rallm "github.com/vijay8059/ai-agent/ReactAct/llm"
+
 	// Router-local packages
 	"github.com/vijay8059/ai-agent/Router/agents"
 	"github.com/vijay8059/ai-agent/Router/llm"
@@ -28,6 +32,7 @@ type AgentType string
 const (
 	AgentDirect      AgentType = "direct"
 	AgentPlanExecute AgentType = "plan_execute"
+	AgentReactAct    AgentType = "react_act"
 	AgentMulti       AgentType = "multi_agent"
 )
 
@@ -50,31 +55,44 @@ Agent types:
                               "Search top 5 AI news today and save to a file",
                               "Find Samsung TV prices across 3 Indian e-commerce sites"
 
-- "multi_agent"   → Tasks that require adaptive decision-making. The next step depends on what
-                    you discover — the plan cannot be fixed upfront.
+- "react_act"     → Single-agent flexible tasks. Tools needed, steps not fully known upfront,
+                    but complexity doesn't require specialist workers. Good for debugging,
+                    fetching and summarizing a single source, or simple tool-based tasks.
+                    Examples: "Summarize the top story on Hacker News today",
+                              "Debug why this Go function panics",
+                              "Fetch this URL and extract the key points"
+
+- "multi_agent"   → Complex adaptive tasks requiring specialist workers and dynamic decisions.
+                    The next step depends on what you discover. Multiple domains involved.
                     Examples: "Research the EV market in India and give a deep analysis",
                               "Find the best budget phone and explain why it's the best",
-                              "Investigate why my app is slow and suggest fixes"
+                              "Investigate and compare two competing technologies"
 
 Return ONLY a JSON object — no prose, no markdown:
-{"agent": "<direct|plan_execute|multi_agent>", "reason": "<one sentence why>"}`
+{"agent": "<direct|plan_execute|react_act|multi_agent>", "reason": "<one sentence why>"}`
 
 // Router classifies queries and dispatches to the right agent.
 type Router struct {
 	routerLLM   *llm.Client
 	direct      *agents.DirectAgent
 	planExecute *peagent.Agent
+	reactAct    *raagent.Agent
 	multiAgent  *maagent.Orchestrator
 	OnDecision  func(Decision)
 	OnPlanStep  func(peagent.Step)
+	OnRAStep    func(raagent.Step)
 	OnMAStep    func(maagent.Step)
 }
 
-// New creates a Router wiring in the standalone PlanExecute and MultiAgent modules.
+// New creates a Router wiring in all standalone agent modules.
 func New(routerLLM *llm.Client) (*Router, error) {
 	peClient, err := pellm.NewClient()
 	if err != nil {
 		return nil, fmt.Errorf("plan-execute llm: %w", err)
+	}
+	raClient, err := rallm.NewClient()
+	if err != nil {
+		return nil, fmt.Errorf("react-act llm: %w", err)
 	}
 	maClient, err := mallm.NewClient()
 	if err != nil {
@@ -82,18 +100,26 @@ func New(routerLLM *llm.Client) (*Router, error) {
 	}
 
 	pe := peagent.New(peClient)
+	ra := raagent.New(raClient)
 	ma := maagent.New(maClient)
 
 	r := &Router{
 		routerLLM:   routerLLM,
 		direct:      agents.NewDirectAgent(routerLLM),
 		planExecute: pe,
+		reactAct:    ra,
 		multiAgent:  ma,
 	}
 
 	pe.OnStep = func(s peagent.Step) {
 		if r.OnPlanStep != nil {
 			r.OnPlanStep(s)
+		}
+	}
+
+	ra.OnStep = func(s raagent.Step) {
+		if r.OnRAStep != nil {
+			r.OnRAStep(s)
 		}
 	}
 
@@ -123,6 +149,8 @@ func (r *Router) Run(ctx context.Context, query string) (AgentType, string, erro
 		answer, err = r.direct.Run(ctx, query)
 	case AgentPlanExecute:
 		answer, err = r.planExecute.Run(ctx, query)
+	case AgentReactAct:
+		answer, err = r.reactAct.Run(ctx, query)
 	case AgentMulti:
 		answer, err = r.multiAgent.Run(ctx, query)
 	default:
@@ -168,7 +196,7 @@ func (r *Router) classify(ctx context.Context, query string) (Decision, error) {
 	}
 
 	switch AgentType(strings.TrimSpace(string(d.Agent))) {
-	case AgentDirect, AgentPlanExecute, AgentMulti:
+	case AgentDirect, AgentPlanExecute, AgentReactAct, AgentMulti:
 		d.Agent = AgentType(strings.TrimSpace(string(d.Agent)))
 	default:
 		d.Agent = AgentDirect

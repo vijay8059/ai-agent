@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	peagent "github.com/vijay8059/ai-agent/PlanExecute/agent"
+	raagent "github.com/vijay8059/ai-agent/ReactAct/agent"
 	maagent "github.com/vijay8059/ai-agent/MultiAgent/agent"
 
 	"github.com/vijay8059/ai-agent/Router/llm"
@@ -32,6 +33,7 @@ func main() {
 		label := map[router.AgentType]string{
 			router.AgentDirect:      "Direct LLM  ",
 			router.AgentPlanExecute: "Plan-Execute",
+			router.AgentReactAct:    "React-Act   ",
 			router.AgentMulti:       "Multi-Agent ",
 		}[d.Agent]
 		fmt.Printf("\n\033[33m[ROUTER]\033[0m → \033[1m%s\033[0m  (%s)\n", label, d.Reason)
@@ -58,6 +60,20 @@ func main() {
 		}
 	}
 
+	// ── ReactAct events (from standalone ReactAct module) ────────────────────
+	r.OnRAStep = func(s raagent.Step) {
+		switch s.Type {
+		case raagent.StepThink:
+			fmt.Printf("\033[33m[THINK  ]\033[0m %s\n", s.Content)
+		case raagent.StepAct:
+			fmt.Printf("\033[34m[ACT    ]\033[0m %s\n", s.Content)
+		case raagent.StepObserve:
+			fmt.Printf("\033[35m[OBS    ]\033[0m %s\n", s.Content)
+		case raagent.StepAnswer:
+			fmt.Printf("\n\033[32m[ANSWER]\033[0m\n%s\n", s.Content)
+		}
+	}
+
 	// ── Multi-Agent events (from standalone MultiAgent module) ────────────────
 	r.OnMAStep = func(s maagent.Step) {
 		switch s.Type {
@@ -77,6 +93,7 @@ func main() {
 	fmt.Println("AI Agent Router — automatically picks the right agent for your query.")
 	fmt.Println("  Direct LLM    → simple facts, explanations")
 	fmt.Println("  Plan-Execute  → structured tasks with known steps")
+	fmt.Println("  React-Act     → flexible single-agent tool use")
 	fmt.Println("  Multi-Agent   → adaptive, complex investigations")
 	fmt.Println("Commands: 'quit' to exit.")
 	fmt.Println(strings.Repeat("═", 60))
@@ -103,7 +120,8 @@ func main() {
 			fmt.Fprintf(os.Stderr, "\033[31m[ERROR]\033[0m %s\n", err)
 		}
 
-		// Direct agent answer is not emitted via OnStep — print it here.
+		// Direct agent has no OnStep — print its answer here.
+		// All other agents emit StepAnswer via their OnStep callbacks.
 		if agentUsed == router.AgentDirect && answer != "" {
 			fmt.Printf("\n\033[32m[ANSWER]\033[0m\n%s\n", answer)
 		}

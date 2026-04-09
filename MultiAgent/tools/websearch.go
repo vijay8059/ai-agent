@@ -131,7 +131,10 @@ func (w *WebSearch) Execute(raw json.RawMessage) (string, error) {
 
 	result := sb.String()
 	if strings.TrimSpace(result) == fmt.Sprintf("Search results for: %q\n\n", input.Query) {
-		return fmt.Sprintf("No results found for %q. Try a different query or use fetch_url to read a specific page.", input.Query), nil
+		return fmt.Sprintf("No results found for %q. "+
+			"The DuckDuckGo Instant Answer API only returns results for well-known entities and topics — "+
+			"it does not support local business, product, or price searches. "+
+			"Do NOT retry with similar queries. Instead, use fetch_url with a specific URL to get the information directly.", input.Query), nil
 	}
 	return result, nil
 }

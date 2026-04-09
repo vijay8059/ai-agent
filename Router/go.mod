@@ -6,6 +6,7 @@ require (
 	github.com/anthropics/anthropic-sdk-go v1.30.0
 	github.com/vijay8059/ai-agent/MultiAgent v0.0.0
 	github.com/vijay8059/ai-agent/PlanExecute v0.0.0
+	github.com/vijay8059/ai-agent/ReactAct v0.0.0
 )
 
 require (
@@ -19,4 +20,5 @@ require (
 replace (
 	github.com/vijay8059/ai-agent/MultiAgent => ../MultiAgent
 	github.com/vijay8059/ai-agent/PlanExecute => ../PlanExecute
+	github.com/vijay8059/ai-agent/ReactAct => ../ReactAct
 )
