@@ -8,6 +8,19 @@ import (
 	"strings"
 )
 
+// validatePath cleans the path and rejects relative paths that escape the
+// current working directory via ".." traversal.
+func validatePath(p string) (string, error) {
+	if p == "" {
+		return "", fmt.Errorf("path cannot be empty")
+	}
+	clean := filepath.Clean(p)
+	if !filepath.IsAbs(clean) && strings.HasPrefix(clean, "..") {
+		return "", fmt.Errorf("path traversal not allowed")
+	}
+	return clean, nil
+}
+
 // ---- ReadFile ---------------------------------------------------------------
 
 // ReadFile reads any text file from disk.
@@ -43,11 +56,15 @@ func (r *ReadFile) Execute(raw json.RawMessage) (string, error) {
 	if err := json.Unmarshal(raw, &input); err != nil {
 		return "", fmt.Errorf("invalid input: %w", err)
 	}
-	data, err := os.ReadFile(input.Path)
+	path, err := validatePath(input.Path)
 	if err != nil {
-		return "", fmt.Errorf("cannot read %q: %w", input.Path, err)
+		return "", err
 	}
-	return fmt.Sprintf("File: %s\n\n%s", input.Path, string(data)), nil
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return "", fmt.Errorf("cannot read file")
+	}
+	return fmt.Sprintf("File: %s\n\n%s", path, string(data)), nil
 }
 
 // ---- WriteFile --------------------------------------------------------------
@@ -90,13 +107,17 @@ func (w *WriteFile) Execute(raw json.RawMessage) (string, error) {
 	if err := json.Unmarshal(raw, &input); err != nil {
 		return "", fmt.Errorf("invalid input: %w", err)
 	}
-	if err := os.MkdirAll(filepath.Dir(input.Path), 0755); err != nil {
-		return "", fmt.Errorf("cannot create directories: %w", err)
+	path, err := validatePath(input.Path)
+	if err != nil {
+		return "", err
 	}
-	if err := os.WriteFile(input.Path, []byte(input.Content), 0644); err != nil {
-		return "", fmt.Errorf("cannot write %q: %w", input.Path, err)
+	if err := os.MkdirAll(filepath.Dir(path), 0700); err != nil {
+		return "", fmt.Errorf("cannot create directories")
 	}
-	return fmt.Sprintf("Successfully wrote %d bytes to %s", len(input.Content), input.Path), nil
+	if err := os.WriteFile(path, []byte(input.Content), 0600); err != nil {
+		return "", fmt.Errorf("cannot write file")
+	}
+	return fmt.Sprintf("Successfully wrote %d bytes to %s", len(input.Content), path), nil
 }
 
 // ---- ListDirectory ----------------------------------------------------------
@@ -138,10 +159,14 @@ func (l *ListDirectory) Execute(raw json.RawMessage) (string, error) {
 	if dir == "" {
 		dir = "."
 	}
+	dir, err := validatePath(dir)
+	if err != nil {
+		return "", err
+	}
 
 	entries, err := os.ReadDir(dir)
 	if err != nil {
-		return "", fmt.Errorf("cannot list %q: %w", dir, err)
+		return "", fmt.Errorf("cannot list directory")
 	}
 
 	var sb strings.Builder

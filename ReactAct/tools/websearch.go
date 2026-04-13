@@ -68,6 +68,9 @@ func (w *WebSearch) Execute(raw json.RawMessage) (string, error) {
 	if strings.TrimSpace(input.Query) == "" {
 		return "", fmt.Errorf("query cannot be empty")
 	}
+	if len(input.Query) > 500 {
+		return "", fmt.Errorf("query too long (max 500 characters)")
+	}
 
 	apiURL := fmt.Sprintf(
 		"https://api.duckduckgo.com/?q=%s&format=json&no_html=1&skip_disambig=1",
